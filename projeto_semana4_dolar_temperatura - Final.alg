@@ -1,5 +1,5 @@
-algoritmo "Projeto - Semana 4 - Conversor de temperatura e dólar"
-// Função: converter temperatura de Celsius para Fahrenheit (e vice-versa) e o dólar para real (e vice-versa)
+algoritmo "Projeto - Semana 4 - Conversor de temperatura e dÃ³lar"
+// FunÃ§Ã£o: converter temperatura de Celsius para Fahrenheit (e vice-versa) e o dÃ³lar para real (e vice-versa)
 // Autor: Carolina Aparecida Sens
 // Data: Maio/2022
 
@@ -22,71 +22,71 @@ enquanto realizarConversao = "S" faca
    temperaturaFahrenheit <- 0
    conversaoparaFahrenheit <- 0
    limpatela
-   escreval ("Olá, você pode realizar as seguintes ações: ")
+   escreval ("OlÃ¡, vocÃª pode realizar as seguintes aÃ§Ãµes: ")
    escreval ("")
-   escreval ("Para conversão de moedas :")
-   escreval ("1 - Converter de DÓLAR para REAL")
-   escreval ("2 - Converter de REAL para DÓLAR")
+   escreval ("Para conversÃ£o de moedas:")
+   escreval ("1 - Converter de DÃ“LAR para REAL")
+   escreval ("2 - Converter de REAL para DÃ“LAR")
    escreval ("")
-   escreval ("Para conversão de temperaturas :")
+   escreval ("Para conversÃ£o de temperaturas:")
    escreval ("3 - Converter de CELSIUS para FAHRENHEIT")
    escreval ("4 - Converter de FAHRENHEIT para CELSIUS")
    escreval ("")
    escreval ("5 - Sair")
    escreval ("")
-   escreva ("Digite o número equivalente à opção escolhida: ")
+   escreva ("Digite o nÃºmero equivalente Ã  opÃ§Ã£o escolhida: ")
    leia (opcaoMenuPrincipal)
    limpatela
    se opcaoMenuPrincipal = "1" entao
-      escreva ("Preencha a cotação atual para 1 dólar: R$ ")
+      escreva ("Preencha a cotaÃ§Ã£o atual para 1 dÃ³lar: R$ ")
       leia(cotacaoDolar)
       escreval ("")
-      escreval ("Você selecionou a opção de converter DÓLAR para REAL")
+      escreval ("VocÃª selecionou a opÃ§Ã£o de converter DÃ“LAR para REAL")
       escreval ("")
-      escreva ("Preencha a quantidade em dólar que você possui: US$ ")
+      escreva ("Preencha a quantidade em dÃ³lar que vocÃª possui: US$ ")
       leia(moedaDolar)
       conversaoparaMoedaReal <- moedaDolar * cotacaoDolar
       limpatela
-      escreval ("Valor em dólar: US$ ", moedaDolar:1:2)
-      escreval ("Cotação atual: US$ 1 equivale a R$ ", cotacaoDolar:1:2)
-      escreval ("Valor convertido de dólar para real: R$ ", conversaoparaMoedaReal:1:2)
+      escreval ("Valor em dÃ³lar: US$ ", moedaDolar:1:2)
+      escreval ("CotaÃ§Ã£o atual: US$ 1 equivale a R$ ", cotacaoDolar:1:2)
+      escreval ("Valor convertido de dÃ³lar para real: R$ ", conversaoparaMoedaReal:1:2)
    senao
       se opcaoMenuPrincipal = "2" entao
-         escreva ("Preencha a cotação atual para 1 dólar: R$ ")
+         escreva ("Preencha a cotaÃ§Ã£o atual para 1 dÃ³lar: R$ ")
          leia(cotacaoDolar)
          escreval ("")
-         escreval ("Você selecionou a opção de converter REAL para DÓLAR")
+         escreval ("VocÃª selecionou a opÃ§Ã£o de converter REAL para DÃ“LAR")
          escreval ("")
-         escreva ("Preencha a quantidade em real que você possui: R$ ")
+         escreva ("Preencha a quantidade em real que vocÃª possui: R$ ")
          leia(moedaReal)
          conversaoparaMoedaDolar <- moedaReal / cotacaoDolar
          limpatela
          escreval ("Valor em real: R$ ", moedaReal:1:2)
-         escreval ("Cotação atual: US$ 1 equivale a R$ ", cotacaoDolar:1:2)
-         escreval ("Valor convertido de real para dólar: US$ ", conversaoparaMoedaDolar:1:2)
+         escreval ("CotaÃ§Ã£o atual: US$ 1 equivale a R$ ", cotacaoDolar:1:2)
+         escreval ("Valor convertido de real para dÃ³lar: US$ ", conversaoparaMoedaDolar:1:2)
       senao
          se opcaoMenuPrincipal = "3" entao
-            escreval ("Você selecionou a opção de converter CELSIUS para FAHRENHEIT")
+            escreval ("VocÃª selecionou a opÃ§Ã£o de converter CELSIUS para FAHRENHEIT")
             escreval ("")
-            escreva ("Preencha a temperatura em Celsius (°C): ")
+            escreva ("Preencha a temperatura em Celsius (Â°C): ")
             leia(temperaturaCelsius)
             conversaoparaFahrenheit <- (temperaturaCelsius * 9/5) + 32
             limpatela
-            escreval ("Temperatura em Celsius :", temperaturaCelsius:1:2, " °C")
-            escreval ("Temperatura convertida de Celsius para Fahrenheit: ", conversaoparaFahrenheit:1:2, " °F")
+            escreval ("Temperatura em Celsius: ", temperaturaCelsius:1:2, " Â°C")
+            escreval ("Temperatura convertida de Celsius para Fahrenheit: ", conversaoparaFahrenheit:1:2, " Â°F")
          senao
             se opcaoMenuPrincipal = "4" entao
-               escreval ("Você selecionou a opção de converter FAHRENHEIT para CELSIUS")
+               escreval ("VocÃª selecionou a opÃ§Ã£o de converter FAHRENHEIT para CELSIUS")
                escreval ("")
-               escreva ("Preencha a temperatura em Fahrenheit (°F): ")
+               escreva ("Preencha a temperatura em Fahrenheit (Â°F): ")
                leia(temperaturaFahrenheit)
                conversaoparaCelsius <- (temperaturaFahrenheit - 32) * 5/9
                limpatela
-               escreval ("Temperatura em Fahrenheit: ", temperaturaFahrenheit:1:2, " °F")
-               escreval ("Temperatura convertida de Fahrenheit para Celsius: ", conversaoparaCelsius:1:2, " °C")
+               escreval ("Temperatura em Fahrenheit: ", temperaturaFahrenheit:1:2, " Â°F")
+               escreval ("Temperatura convertida de Fahrenheit para Celsius: ", conversaoparaCelsius:1:2, " Â°C")
             senao
                se opcaoMenuPrincipal <> "5" entao
-                  escreval ("Opção inválida, por favor, tente novamente")
+                  escreval ("OpÃ§Ã£o invÃ¡lida, por favor, tente novamente")
                fimse
             fimse
          fimse
@@ -98,9 +98,9 @@ enquanto realizarConversao = "S" faca
       escreval ("")
       escreval ("-------------------")
       escreval ("")
-      escreval ("Você deseja realizar outra conversão? (S/N)")
+      escreval ("VocÃª deseja realizar outra conversÃ£o? (S/N)")
       leia(realizarConversao)
    fimse
 fimenquanto
-escreval ("Você optou por não realizar nenhuma conversão. Obrigado!")
+escreval ("VocÃª optou por nÃ£o realizar nenhuma conversÃ£o. Obrigado!")
 fimalgoritmo
