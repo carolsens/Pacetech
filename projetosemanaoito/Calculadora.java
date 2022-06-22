@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package projetosemanaoito;
+package projetosemanaoitofinal;
 
 /**
  *
@@ -372,14 +372,19 @@ public class Calculadora extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botaoIgualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botaoIgualActionPerformed
-        if (operacao == "adicao") {
-            tela.setText(Float.toString(numero1+(Float.parseFloat(tela.getText()))));  
-        } else if (operacao == "subtracao") {
+        switch (operacao) {
+            case "adicao":
+            tela.setText(Float.toString(numero1+(Float.parseFloat(tela.getText()))));
+            break;
+            case "subtracao":
             tela.setText(Float.toString(numero1-(Float.parseFloat(tela.getText()))));  
-        } else if (operacao == "multiplicacao") {
+            break;
+            case "multiplicacao":
             tela.setText(Float.toString(numero1*(Float.parseFloat(tela.getText()))));  
-        } else if (operacao == "divisao") {
+            break;
+            case "divisao":
             tela.setText(Float.toString(numero1/(Float.parseFloat(tela.getText()))));  
+            break;
         }
     }//GEN-LAST:event_botaoIgualActionPerformed
 
@@ -485,6 +490,9 @@ public class Calculadora extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Calculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
