@@ -22,7 +22,7 @@ public class Main {
             }
         }
 
-        System.out.println("Quantidade de números sorteados: " + jogo1.getJogoBingo().size());
+        System.out.println("Quantidade de números sorteados: " + jogo1.getQtdNumSorteados());
         System.out.println("Números sorteados: " + jogo1.getJogoBingo());
         System.out.println("Maior valor sorteado: " + jogo1.getMaiorNumero());
         System.out.println("Menor valor sorteado: " + jogo1.getMenorNumero());

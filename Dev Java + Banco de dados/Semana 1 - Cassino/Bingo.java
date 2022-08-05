@@ -12,6 +12,7 @@ public class Bingo {
     
     public void setAddNumeroBingo(Integer numeroBingo){
         jogoBingo.add(numeroBingo); 
+        
         if (numeroBingo > maiorNumero){
             maiorNumero = numeroBingo;
         }
@@ -22,6 +23,10 @@ public class Bingo {
     
     public ArrayList<Integer> getJogoBingo(){
         return jogoBingo;
+    }
+    
+     public int getQtdNumSorteados() {           
+        return jogoBingo.size();
     }
     
     public int getMaiorNumero() {           
