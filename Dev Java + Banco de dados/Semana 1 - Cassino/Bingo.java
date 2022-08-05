@@ -25,7 +25,7 @@ public class Bingo {
         return jogoBingo;
     }
     
-     public int getQtdNumSorteados() {           
+    public int getQtdNumSorteados() {           
         return jogoBingo.size();
     }
     
