@@ -11,7 +11,7 @@ SELECT e.Departement AS 'Departamentos' FROM employee AS e
 
 /* pode ser feito da seguinte forma também: */
 
-	SELECT DISTINCT e.Departement AS 'Departamentos' FROM employee AS e
+SELECT DISTINCT e.Departement AS 'Departamentos' FROM employee AS e
 
 
 /* Consulta 3 */
